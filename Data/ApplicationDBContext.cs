@@ -16,7 +16,7 @@ namespace PicturePlanner.Data
         public DbSet<Setting> Settings { get; set; }
         public DbSet<Transaction> Transactions { get; set; }
 
-        public ApplicationDBContext(DbContextOptions<ApplicationDBContext> options)
+        public ApplicationDBContext(DbContextOptions options) : base(options)
         {
             
         }
